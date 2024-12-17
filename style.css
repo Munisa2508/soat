@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: bold 12px Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+.clock {
+    border: 1px solid #606060;
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #222222;
+}
+
+#Date {
+    font-size: 20px !important;
+    text-align: center;
+}
+
+.clock ul {
+    list-style: none;
+    display: flex;
+    font-size: 90px;
+    gap:15px;
+}
+
+/* telefon uchun */
+@media (max-width: 480px) {
+    .container {
+        display: flex;
+        width: 250px;
+        height: 200px;
+       justify-content: center;
+       align-items: center;
+    }
+
+    .clock{
+        font-size: 1rem;
+    }
+
+    li {
+        font-size: 2.5rem;
+    }
+}
